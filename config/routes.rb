@@ -2,6 +2,13 @@ Rails.application.routes.draw do
 
   root 'demo#index'
 
+  resources :subjects do
+
+    member do
+      get :delete
+    end
+  end
+
   get 'demo/hello'
   get 'new_controller/index'
   get 'new_controller/new'
