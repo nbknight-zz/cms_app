@@ -25,14 +25,16 @@ Rails.application.routes.draw do
   end
 
 
-
+  get 'demo/index'
   get 'demo/hello'
   get 'new_controller/index'
   get 'new_controller/new'
   get 'new_controller/show'
+  get 'demo/lynda'
+  get 'demo/escape_output'
   
  
-  get 'demo/index'
+  
 
 
   # default route
